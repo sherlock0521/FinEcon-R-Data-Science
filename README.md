@@ -1,5 +1,5 @@
 # FinEcon-R-Data-Science
-115-1 財金與經濟資料計量分析 ECONOMETRIC ANALYSIS OF FINANCIAL AND ECONOMIC DATA
+114-2 財金與經濟資料計量分析 ECONOMETRIC ANALYSIS OF FINANCIAL AND ECONOMIC DATA
 
 ## 📚 參考來源 (Credits & Attribution)
 

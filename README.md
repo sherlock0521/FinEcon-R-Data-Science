@@ -3,7 +3,7 @@
 
 ## 📚 參考來源 (Credits & Attribution)
 
-本教學專案之程式範例、資料集處理邏輯及練習題，主要參考並改編自以下著作：
+本專案之程式範例與資料集處理邏輯，主要參考並改編自以下著作：
 * **書名**：[R for Data Science (2nd Edition)](https://r4ds.hadley.nz/)
 * **作者**：Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund
 * **出版社**：O'Reilly Media

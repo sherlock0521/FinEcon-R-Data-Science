@@ -40,7 +40,7 @@ View(penguins)
 # 這裡有兩個方法偷看資料長甚麼樣子
 
 ## 我們的問題
-## 鰭肢(fippers)長的企鵝比鰭肢短的企鵝種還是輕
+## 考慮到企鵝種類(species) 鰭肢(fippers)長的企鵝比鰭肢短的企鵝種還是輕
 
 ## 我們的目標
 
@@ -137,3 +137,57 @@ ggplot(
 
 # 大功告成
 
+
+# 看看其他的圖
+
+# 類別變數怎麼畫圖
+
+ggplot(penguins, aes(x = species))+
+  geom_bar()
+
+# 如果對順序有偏好
+
+ggplot(penguins, aes(x = fct_infreq(species)))+
+  geom_bar()
+
+# 數值變數怎麼畫圖
+
+ggplot(penguins, aes(x = body_mass_g))+
+  geom_histogram()
+
+ggplot(penguins, aes(x = body_mass_g))+
+  geom_histogram(binwidth =  20)
+
+ggplot(penguins, aes(x = body_mass_g))+
+  geom_histogram(binwidth =  200)
+
+ggplot(penguins, aes(x = body_mass_g))+
+  geom_histogram(binwidth =  2000)
+
+# 或是
+
+ggplot(penguins, aes(x = body_mass_g))+
+  geom_density()
+
+
+# 同時看一個類別變數一個數值變數
+
+ggplot(penguins, aes(x = species, y = body_mass_g))+
+  geom_boxplot()
+
+# 或是
+
+ggplot(penguins, aes(x = body_mass_g, color = species))+
+  geom_density()
+
+
+# 兩個類別變數
+
+ggplot(penguins, aes(x = island))+
+  geom_bar()
+
+ggplot(penguins, aes(x = island, fill = species))+
+  geom_bar()
+
+ggplot(penguins, aes(x = island, fill = species))+
+  geom_bar(position = "fill")

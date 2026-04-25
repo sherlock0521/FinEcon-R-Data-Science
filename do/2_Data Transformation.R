@@ -8,7 +8,7 @@
 
 rm(list = ls())
 
-## 設定環境 ( Set Envirmenyt )
+## 設定環境 ( Set Envirment )
 
 # install.packages("nycflights13")
 

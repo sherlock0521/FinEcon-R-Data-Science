@@ -27,7 +27,7 @@ Y <- as.matrix(data[, 1])
 
 beta <- solve(t(X) %*% X) %*% t(X) %*% Y
 
-View(Beta)
+View(beta)
 
 # 求 Residuals-----------
 
